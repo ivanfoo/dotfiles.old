@@ -84,3 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # Git config
 export GIT_AUTHOR_EMAIL=sanfru.ivan@gmail.com
 export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+
+# Go config
+export GOPATH=~/go
