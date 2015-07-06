@@ -86,5 +86,5 @@ export GIT_AUTHOR_EMAIL=sanfru.ivan@gmail.com
 export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
 # Go config
-export GOPATH=~/go
+export GOPATH=/opt/go
 export PATH=$PATH:$GOPATH/bin
