@@ -51,6 +51,8 @@ plugins=(git go)
 
 # User configuration
 
+setopt rm_star_silent
+
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -86,5 +88,5 @@ export GIT_AUTHOR_EMAIL=sanfru.ivan@gmail.com
 export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
 # Go config
-export GOPATH=/opt/go
+export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
