@@ -90,3 +90,6 @@ export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 # Go config
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
+
+# 256 colors
+export TERM=xterm-256color
