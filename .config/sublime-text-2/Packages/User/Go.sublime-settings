@@ -1,0 +1,8 @@
+{
+    "ensure_newline_at_eof_on_save": true,
+	"font_size": 11,
+	"rulers": [80],
+	"tab_size": 8,
+	"translate_tabs_to_spaces": false
+
+}
