@@ -83,6 +83,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Loading private stuff
+source $ZSH_CUSTOM/private/*/*.sh
+
 # Git config
 export GIT_AUTHOR_EMAIL=sanfru.ivan@gmail.com
 export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
