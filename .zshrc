@@ -84,16 +84,31 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Loading private stuff
-source $ZSH_CUSTOM/private/*/*.sh
+if [ -d "$ZSH_CUSTOM/private" ]; then
+	source $ZSH_CUSTOM/private/*/*.sh
+fi
 
 # Git config
 export GIT_AUTHOR_EMAIL=sanfru.ivan@gmail.com
 export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
+# Ruby config
+PATH=$PATH:~/.gem/ruby/2.2.0/bin
+
 # Go config
 export GOPATH=~/go
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$GOPATH/bin
+PATH=$PATH:/usr/local/go/bin
+PATH=$PATH:$GOPATH/bin
+
+# Exporting PATH
+export PATH
 
 # 256 colors
-export TERM=xterm-256color
+#export TERM=xterm-256color
+
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-3024.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+
+# added by travis gem
+[ -f /home/ivanfoo/.travis/travis.sh ] && source /home/ivanfoo/.travis/travis.sh
