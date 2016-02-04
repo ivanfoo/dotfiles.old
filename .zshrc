@@ -93,7 +93,7 @@ export GIT_AUTHOR_EMAIL=sanfru.ivan@gmail.com
 export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 
 # Ruby config
-PATH=$PATH:~/.gem/ruby/2.2.0/bin
+PATH=$PATH:~/.gem/ruby/2.2.0/bin:~/.gem/ruby/2.3.0/bin
 
 # Go config
 export GOPATH=~/go
@@ -102,6 +102,9 @@ PATH=$PATH:$GOPATH/bin
 
 # Exporting PATH
 export PATH
+
+# Exporting editor
+export EDITOR=/usr/bin/vim
 
 # 256 colors
 #export TERM=xterm-256color
